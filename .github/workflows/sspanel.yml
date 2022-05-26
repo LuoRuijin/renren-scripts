@@ -3,8 +3,8 @@ name: sspanel
 on:
   workflow_dispatch:
   schedule:
-   # 每天12点15签到
-    - cron: "15 20 * * *"
+   # 每天12点21签到
+    - cron: "21 20 * * *"
   # watch:
     # types: [ started ]
 
@@ -35,7 +35,7 @@ jobs:
         run: |
           node sspanel_checkin.js
         env:
-          SITE_ACCOUNTS: ${{ secrets.SITE_NZ_ACCOUNTS }}
+          SITE_ACCOUNTS: ${{ secrets.SITE_ZSS_ACCOUNTS }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_USER_ID: ${{ secrets.TG_USER_ID }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
