@@ -3,8 +3,8 @@ name: sspanel
 on:
   workflow_dispatch:
   schedule:
-   # 每天12点21签到
-    - cron: "21 20 * * *"
+    # 每天在国际UTC标准时间1点（北京时间+8，即早上9点10分）运行
+    - cron: "10 1 * * *"
   # watch:
     # types: [ started ]
 
