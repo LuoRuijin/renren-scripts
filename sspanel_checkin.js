@@ -30,6 +30,7 @@ if (total.indexOf('&') > -1) {
         // 密码
         $.pwd = totalList[i].split(',')[1].split(':')[1];
         console.log(`\n*****开始第【${$.index}】个网站****\n`);
+        console.log(`\n*****开始签到邮箱【${$.email}】****\n`);
         await main();
         await $.wait(2000)
     }
